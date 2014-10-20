@@ -36,8 +36,6 @@ int t=0;
 int h=0;
 int Timer= 0;
 
-
-
 void setup () {
   Serial.begin(57600);
   
@@ -55,11 +53,6 @@ void setup () {
   ether.printIp("GW:  ", ether.gwip);  
   ether.printIp("DNS: ", ether.dnsip); 
 }
-
-// Here we get values from the Lightsensor
-static void ReadlightPin();
-
-
 //  Here we get values from the DHT11
 static void ReadDHT11()
 {
